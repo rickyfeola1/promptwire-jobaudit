@@ -1179,7 +1179,7 @@
 
 <script>
 const API_URL = '/api/subscribe';
-const AUTOMATION_ID = 'aut_8cf05289-d715-499f-884b-840d57f33465';
+const AUTOMATION_ID = 'REPLACE_WITH_YOUR_AUTOMATION_ID';
 
 async function subscribe(source) {
     const emailId = source === 'hero' ? 'heroEmail' : 'bottomEmail';
@@ -1209,7 +1209,7 @@ async function subscribe(source) {
         if (data.event_id) eventId = data.event_id;
     } catch(e) { console.error(e); }
 
-    const eid = eventId ? '?eid=' + eventId : '';
+    const eid = eventId ? '?eid=' + eventId + '&src=job_audit' : '?src=job_audit';
     window.top.location.href = 'https://www.promptwireai.com/recommendations' + eid;
 }
 
