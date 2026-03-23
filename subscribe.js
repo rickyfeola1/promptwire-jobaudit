@@ -93,7 +93,7 @@ export default async function handler(req, res) {
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({
                             data: [{
-                                event_name: 'Lead',
+                                event_name: 'Lead_JobAudit',
                                 event_time: Math.floor(Date.now() / 1000),
                                 event_id: eventId,
                                 action_source: 'website',
